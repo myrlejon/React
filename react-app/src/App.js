@@ -1,12 +1,15 @@
-import { MyFirstComponent } from './components/myfirstcomponent/MyFirstComponent'
 import { Routing } from './routes/Routing'
+import { NavigationBar } from './components/navigationbar/NavigationBar'
+import './shared/global/Global.css'
+import { UserProvider } from './shared/global/provider/UserProvider'
 
 function App() {
   return (
-    <Routing>
-      <h1>React Test</h1>
-      < MyFirstComponent name="Nils" age = "22" />
-    </Routing>
+    <UserProvider>
+      <Routing>
+        <NavigationBar />
+      </Routing>
+    </UserProvider>
   )
 }
 

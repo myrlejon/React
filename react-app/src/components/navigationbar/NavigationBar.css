@@ -1,0 +1,24 @@
+.navigationBarWrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-color: aquamarine;
+}
+
+.logo {
+    width: 100px;
+}
+
+.signIn {
+    grid-column: 9/10;
+    align-self: center;
+}
+
+.logo,
+.signIn {
+    cursor: pointer;
+}
+
+.profile {
+    grid-column: 8/10;
+    align-self: center;
+}
