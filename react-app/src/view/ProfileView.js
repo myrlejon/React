@@ -7,7 +7,6 @@ export const ProfileView = () => {
     const history = useHistory()
 
     const sendValue = () => {
-        setCount(count + 1)
         history.push(RoutingPath.settingsView, [count])
     }
 
